@@ -1,0 +1,28 @@
+{
+  "name": "pdf-document-feeder",
+  "version": "1.0.0",
+  "description": "Sorting PDF pages after scanning through a document feeder",
+  "main": "src/index.js",
+  "scripts": {
+    "format": "prettier --write 'src/**.js'",
+    "start": "node src/index.js ",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/compose-us-research/pdf-document-feeder.git"
+  },
+  "keywords": [],
+  "author": "compose.us GmbH <hello@compose.us> (https://compose.us)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/compose-us-research/pdf-document-feeder/issues"
+  },
+  "homepage": "https://github.com/compose-us-research/pdf-document-feeder#readme",
+  "dependencies": {
+    "pdf-lib": "^0.6.2"
+  },
+  "devDependencies": {
+    "prettier": "^1.17.1"
+  }
+}
