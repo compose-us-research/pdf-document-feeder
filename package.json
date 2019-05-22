@@ -2,6 +2,7 @@
   "name": "pdf-document-feeder",
   "version": "1.0.0",
   "description": "Sorting PDF pages after scanning through a document feeder",
+  "bin": "src/index.js",
   "main": "src/index.js",
   "scripts": {
     "format": "prettier --write 'src/**.js'",
