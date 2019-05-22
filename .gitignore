@@ -60,4 +60,8 @@ typings/
 # next.js build output
 .next
 
+# Mac OSX
+.DS_Store
+
+# default output 
 output.pdf
