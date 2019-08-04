@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/compose-us-research/pdf-document-feeder#readme",
   "dependencies": {
-    "pdf-lib": "^0.6.2"
+    "pdf-lib": "^1.0.1"
   },
   "devDependencies": {
     "prettier": "^1.18.2"
