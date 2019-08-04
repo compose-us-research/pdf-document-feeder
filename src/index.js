@@ -17,7 +17,12 @@ async function run({ pdfPath, outPath }) {
     const pages = doc.getPages();
     const lastPage = pages[lastPageIndex];
     doc.removePage(lastPageIndex);
-    doc.insertPage(i * 2 + 1, lastPage);
+    const pageIndex = i * 2 + 1;
+    if (pageIndex > lastPageIndex) {
+      doc.addPage(lastPage);
+    } else {
+      doc.insertPage(pageIndex, lastPage);
+    }
   }
   const bytes = await doc.save();
   fs.writeFileSync(outPath, bytes);
