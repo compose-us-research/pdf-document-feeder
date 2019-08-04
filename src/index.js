@@ -6,7 +6,7 @@ const pdfLib = require("pdf-lib");
 const pdfPath = process.argv[2];
 const outPath = process.argv[3] || "output.pdf";
 
-run({ pdfPath, outPath });
+run({ pdfPath, outPath }).catch(error => console.error("Error!", error));
 
 async function run({ pdfPath, outPath }) {
   const pdfDocument = fs.readFileSync(pdfPath);
