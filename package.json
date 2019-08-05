@@ -6,8 +6,10 @@
   "main": "src/index.js",
   "scripts": {
     "format": "prettier --write 'src/**.js'",
-    "start": "node src/index.js ",
-    "test": "npm run start test-input.pdf test-output.pdf && diff test-output.pdf test-expected.pdf && rm test-output.pdf"
+    "start": "node src/index.js",
+    "test": "npm run test:even && npm run test:odd",
+    "test:even": "npm start test-even-input.pdf test-even-output.pdf && diff test-even-output.pdf test-even-expected.pdf && rm test-even-output.pdf",
+    "test:odd": "npm start test-odd-input.pdf test-odd-output.pdf && diff test-odd-output.pdf test-odd-expected.pdf && rm test-odd-output.pdf"
   },
   "repository": {
     "type": "git",
