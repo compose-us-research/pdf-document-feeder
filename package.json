@@ -8,8 +8,8 @@
     "format": "prettier --write 'src/**.js'",
     "start": "node src/index.js",
     "test": "npm run test:even && npm run test:odd",
-    "test:even": "npm start test-even-input.pdf test-even-output.pdf && diff test-even-output.pdf test-even-expected.pdf && rm test-even-output.pdf",
-    "test:odd": "npm start test-odd-input.pdf test-odd-output.pdf && diff test-odd-output.pdf test-odd-expected.pdf && rm test-odd-output.pdf"
+    "test:even": "npm start test-even-input.pdf test-even-output.pdf && diff-pdf-visually test-even-output.pdf test-even-expected.pdf && rm test-even-output.pdf",
+    "test:odd": "npm start test-odd-input.pdf test-odd-output.pdf && diff-pdf-visually test-odd-output.pdf test-odd-expected.pdf && rm test-odd-output.pdf"
   },
   "repository": {
     "type": "git",
@@ -23,9 +23,9 @@
   },
   "homepage": "https://github.com/compose-us-research/pdf-document-feeder#readme",
   "dependencies": {
-    "pdf-lib": "^1.0.1"
+    "pdf-lib": "^1.3.2"
   },
   "devDependencies": {
-    "prettier": "^1.18.2"
+    "prettier": "^1.19.1"
   }
 }
